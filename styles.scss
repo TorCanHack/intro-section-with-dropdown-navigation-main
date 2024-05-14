@@ -1,0 +1,457 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Epilogue', sans-serif;
+
+  
+    
+
+    header {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 343px;
+        height: 35px;
+        margin-top: 1rem;
+
+        nav {
+            z-index: 10;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            color: #686868;
+            
+            .menu-button {
+
+                background-color: white;
+                border: none;
+
+                margin-left: auto;
+                
+                .icon-close-menu {
+                    display: none;
+                }
+            }
+
+            div {
+                
+                height: 700px;
+                background-color: white;
+                display: none;
+
+                ul {
+
+                    
+
+                    li {
+                        list-style-type: none;
+                        margin-bottom: 1rem;
+                    }
+    
+                    .features-btn {
+                        border: none;
+                        font-size: 1rem;
+                        line-height: 26px;
+                        background-color: white;
+                        
+
+                        .features-arrow-up{
+                            display: none;
+                        }
+                        
+                    }
+
+                    .company-btn {
+                        border: none;
+                        font-size: 1rem;
+                        line-height: 26px;
+                        background-color: white;
+                        
+
+                        .company-arrow-up {
+                            display: none;
+                        }
+                        
+                    }
+
+                    button {
+                        color: #686868;;
+                    }
+
+                    .features-dropdown{
+
+                        display: none;
+
+                        .todo {
+                            margin-top: 1rem;
+                        }
+
+                        svg {
+                            position: relative;
+                            right: 10px;
+                        }
+                        
+
+                        
+                    }
+
+                    .company-dropdown {
+
+                        display: none;
+
+                        .history {
+
+                            margin-top: 1rem;
+                        }
+                        
+
+                        
+                    }
+                }
+
+                .login-button {
+                    width: 195px;
+                    height: 42px;
+                    border: none;
+                    margin: 2rem 0 1rem 0;
+                    background-color: white;
+                    margin: 0 auto;
+                    display: block;
+                    color: #686868;
+                }
+
+                .register-button {
+
+                    width: 195px;
+                    height: 42px;
+                    border-radius: 1rem;
+                    background-color: white;
+                    border: 2px solid #686868;
+                    margin: 0 auto;
+                    display: block;
+                    color: #686868;
+                }
+                
+                
+            }
+        }
+    }
+
+    main {
+
+        width: min(95%, 375px);
+        height: 570px;
+        margin-top: 12px;
+        text-align: center;
+
+        .image-hero-desktop {
+            display: none;
+        }
+
+        .image-hero-mobile {
+            width: inherit;
+            height: 281px;
+        }
+
+        h1 {
+
+            font-size: 2.25rem;
+            line-height: 42px;
+        }
+
+        p {
+
+            color: #686868;
+            line-height: 26px;
+            padding: 0 1rem;
+        }
+
+        button {
+
+            width: 136px;
+            height: 48px;
+            border-radius: 1rem;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+
+    }
+
+    footer {
+        display: flex;
+
+        svg {
+
+            flex: 1;
+            margin: 0 3px;
+        }
+        
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body.overlay-active::before {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        opacity: 0.7;
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+ 
+
+    body {
+
+        background-color: #FAFAFA;
+        
+
+        
+
+        
+
+        header {
+
+            width: 1440px;
+            padding: 0 2rem;
+            
+            
+            
+            
+
+            
+
+            nav {
+
+                position: relative;
+                right: 64rem;
+                height: 40px;
+                background-color: #FAFAFA;
+                
+                
+                
+                .menu-button {
+                    display: none;
+                }
+
+                .drop-down-container {
+                    
+                    display: flex;
+                    flex-direction: row;
+                    width: 1440px;
+                    height: 42px;
+                    background-color: #FAFAFA;
+                    
+                    
+
+                    .menu {
+
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        
+
+                        .features-btn {
+
+                            position: relative;
+                            bottom: 1rem;
+                            left: 3rem;
+                            background-color: #FAFAFA;
+                        }
+
+                        .features-dropdown {
+                            
+                            z-index: 100;
+                            position: absolute;
+                            width: 153px;
+                            height: 160px;
+                            border-radius: 1rem;
+                            background-color: white;
+                        }
+
+                        .company-btn {
+                            position: relative;
+                            bottom: 1rem;
+                            left: 6rem;
+                            background-color: #FAFAFA;
+                        }
+
+                        .company-dropdown {
+                            position: absolute;
+                            left: 14rem;
+                            z-index: 100;
+                            width: 116px;
+                            height: 128px;
+                            border-radius: 1rem;
+                            background-color: white;
+
+                            li {
+                                position: relative;
+                                right: 1rem;
+                            }
+                            
+                        }
+
+                        .careers {
+
+                            position: relative;
+                            bottom: 8px;
+                            left: 9rem;
+                            
+                        }
+
+                        .about {
+
+                            position: relative;
+                            bottom: 8px;
+                            left: 12rem;
+
+                        }
+
+                        .about:hover, .careers:hover {
+
+                            cursor: pointer;
+                            color: black;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .login-button {
+
+                        width: 100px;
+                        position: relative;
+                        bottom: 6px;
+                        left: 27rem;
+                        background-color: #FAFAFA;
+                        
+                    }
+
+                    .register-button {
+                        width: 142px;
+                        position: relative;
+                        bottom: 6px;
+                        background-color: #FAFAFA;
+                    }
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    color: black;
+                    font-weight: 700;
+                    
+                }
+            }
+
+            
+        }
+
+        main{
+
+            width: 1440px;
+            height: 900px;
+            padding: 0 12rem;
+            background-color: #FAFAFA;
+            
+
+            .image-hero-mobile {
+                display: none;
+                
+                
+            }
+
+            .image-hero-desktop {
+
+                display: flex;
+                width: 480px;
+                height: 640px;
+                margin-left: auto;
+                margin-top: 2rem;
+                
+                
+
+            }
+
+            div {
+
+                position: relative;
+                bottom: 32rem;
+                width: 540px;
+                height: 400px;
+                text-align: left;
+                padding-left: 5px;
+                
+
+                h1 {
+                    font-size: 5rem;
+                    line-height: 5rem;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-size: 1.125rem;
+                    line-height: 28px;
+                    padding: 0 5rem 0 0;
+                    margin: -1rem 0 2rem 0;
+                }
+
+                button {
+
+                    width: 163px;
+                    height: 56px;
+                    border: 1.5px solid #686868;
+                    font-size: 1.125rem;
+                    background-color: black;
+                    color: white;
+
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    background-color: white;
+                    color: black;
+
+                }
+
+                
+            }
+
+            
+        }
+
+        footer {
+            margin-top: -16.5rem;
+            margin-right: auto;
+            padding-left: 12rem;
+
+    
+            svg {
+    
+                
+                margin: 0 16px;
+            }
+            
+            
+        }
+    }    
+}
+
+
+
+
