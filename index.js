@@ -74,3 +74,10 @@ companyButton.addEventListener('click', function() {
 
     }
 })
+
+document.querySelectorAll('.drop-down-btn').forEach(button => {
+    button.onclick = function() {
+      let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+    }
+  }); 
